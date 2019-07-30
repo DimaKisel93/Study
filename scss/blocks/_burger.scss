@@ -1,0 +1,185 @@
+.burger{
+    background: linear-gradient(#f9b43b 30%,#f6ac3a,#f09a39,#ec8f38,#ec9139,#ed9339,#f4a83a);
+    display:flex;
+    align-items: center;
+
+    &__container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: rem(416px);
+        max-width: 100%;
+    }
+    &__arrow-left{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        width: 5%;
+        margin-right: 5px;
+    }
+    &__arrowleft{
+        background: url(/img/burger/arrow-scroll.png) no-repeat;
+        width: rem(15px);
+        height: rem(30px);
+    }
+    &__content{
+        margin-right: 30px;
+        overflow: hidden;
+        width: 1016px;
+    }
+    &__list{
+        display:flex;
+        transition: 1s;
+    }
+    &__item{
+        overflow: hidden;
+        display: inline-block;
+    }
+    &__content-wrap{
+        display:flex;
+        height: rem(485px);
+        align-items: center;
+
+        @include tablets{
+            flex-direction: column;
+        }
+    }
+    &__main{
+        width: 50%;
+        display: flex;
+        position: relative;
+        margin-right: rem(20px);
+    }
+    &__pict{
+        width: 100%;
+    }
+    &__review{
+        @include ubuntu();
+        color:#fff;
+        font-size: rem(14px);
+    }
+    &__sell{
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    &__blank{
+        height: 60px;
+        width: 500px;
+    }
+    &__cost{
+        @include gagalin();
+        color: $red;
+        margin-right: rem(10px);
+        font-size: rem(72px);
+    }
+    &__cost2{
+        margin-right: rem(30px);
+        font-size: rem(30px);
+        color: $red;
+    }
+    &__arrow-right{
+        display: flex;
+        height: 100%;
+        align-items: center;
+        width: 5%;
+    }
+    &__arrowright{
+        background: url(/img/burger/arrow-scroll2.png) no-repeat;
+        width: rem(15px);
+        height: rem(30px);
+    }
+    &__composition{
+        position: absolute;
+        background: #f08c33;
+        top: -20%;
+        width: 90px;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        &:hover{
+            background:$red;
+        }
+        &:hover .burger__menu{
+            left: 100%;
+        }
+    }
+    &__icons{
+        width: rem(50px);
+        height: rem(50px);
+        fill: #fff;
+        &_text{
+            color: #fff;
+        }
+    }
+    &__menu{
+        width: rem(270px);
+        background: #ebecee;
+        opacity: .9;
+        position: absolute;
+        left: 9999px;
+        top: 0%;
+        border-radius: rem(5px);
+    }
+    &__menu_item{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: rem(20px);
+    }
+    &__menu_icons{
+        margin-left: rem(20px);
+        margin-right: rem(20px);
+    }
+    &__menu_pict{
+        width: rem(50px);
+        height: rem(45px);
+        &--red{
+            fill: $red;
+        }
+        &--green{
+            fill:$green;
+        }
+        &--yellow{
+            fill:$yellow;
+        }
+    }
+    &__menu_info{
+        font-size: rem(14px);
+    }
+    &__koll{
+        position: absolute;
+        top: 100%;
+        text-align: center;
+    }
+    &__kkal{
+        width: rem(50px);
+        height: rem(50px);
+        fill: #fff;
+        &_text{
+            color: #fff;
+        }
+    }
+    &__textsvg{
+        fill:#fff;
+    }
+    &__text{
+        display: flex;
+        flex-direction: column;
+        align-self: flex-start;
+        width: 50%;
+
+        @include tablets{
+            align-self: center;
+        }
+    }
+    &__review{
+        margin-bottom: rem(35px);
+    }
+   
+}

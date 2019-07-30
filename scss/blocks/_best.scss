@@ -1,0 +1,87 @@
+.best {
+  background-image: url('/img/best/bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include phones{
+    padding: 30% 5%;
+  }
+}
+
+.section__title--best {
+  color: #2f3234;
+  padding: 0;
+  margin-bottom: rem(60px);
+}
+
+.best__icon-pic1{
+  fill:$red;
+  width: 100%;
+}
+
+.best__icon-pic2{
+  fill:$yellow;
+  width: 100%;
+}
+
+.best__icon-pic3{
+  fill:$green;
+  width: 100%;
+}
+
+.best__list {
+  display: flex;
+
+  @include phones{
+    flex-direction: column;
+  } 
+}
+
+.best__item {
+  margin-right: rem(20px);
+  
+  @include phones{
+    display: flex;
+    flex-direction: row;
+  }
+  
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.best__title{
+  text-align: center;
+  margin-bottom: rem(25px);
+  @include lifehack();
+  font-size: rem(24px);
+}
+
+.best__icon{
+  margin-bottom: rem(25px);
+
+  @include phones{
+    margin-right: rem(20px);
+  }
+
+}
+
+.best__text{
+  font-size: rem(14px);
+  @include ubuntu(light); 
+}
+
+.best__content{
+
+  @include phones{
+    display: flex;
+    flex-direction: column;
+  }
+  
+}
+

@@ -1,0 +1,35 @@
+$red: #e25028;
+$yellow: #f8b43a;
+$green: #8ac03e;
+$black: #2f3234;
+
+// breakpoint
+
+$hd:1200px;
+$lap:992px;
+$tablets:768px;
+$phones:480px;
+
+//config
+@import "config/mixins.scss";
+
+// base
+@import "layout/fonts.scss";
+@import "layout/base.scss";
+@import "layout/adjustment.scss";
+
+//normalize
+@import "layout/normalize.scss";
+
+// section
+@import "blocks/hero.scss";
+@import "blocks/best.scss";
+@import "blocks/nav.scss";
+@import "blocks/review.scss";
+@import "blocks/team.scss";
+@import "blocks/menu.scss";
+@import "blocks/order.scss";
+@import "blocks/video.scss";
+@import "blocks/contact.scss";
+@import "blocks/burger";
+@import "blocks/btn.scss";

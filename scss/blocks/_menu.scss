@@ -1,0 +1,81 @@
+.menu {
+    background: url(/img/menu/bg-menu.jpg) center center no-repeat;
+    background-size: cover;
+    position: relative;
+    display: flex;
+
+    @include tablets{
+        padding: 25% 0;
+    }
+
+    &__container{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+
+        @include tablets{
+            width: 28%;
+        }
+
+        @include phones{
+            width: 39%;
+        }
+    }
+    &__list{
+        display: flex;
+    }
+    &__item{
+        display: flex;
+        &--active{
+            .menu__title{
+                color:$yellow;
+            }
+            .menu__content{
+                width: rem(540px);
+            }
+        }    
+    }
+    &__trigger{
+        display: flex;
+        align-items: flex-end;
+        width: rem(80px);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: rem(35px);
+        text-decoration: none; 
+    }
+    &__title{
+        @include gagalin();
+        font-size: rem(40px);
+        color: #fff;
+        transform: rotate(-90deg);
+        white-space: nowrap;
+        width: 100%;
+    }
+    &__content{
+        width: 0;
+        overflow: hidden;
+        background: rgba(#2f3234, .93);
+        transition: width 2s;
+    }
+    &__text{
+        color: #fff;
+        padding: rem(60px) rem(35px);
+        min-width: rem(540px);
+    }
+
+}
+
+
+
+
+.section-title_style{
+    color:#fff;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+

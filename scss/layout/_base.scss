@@ -1,0 +1,125 @@
+html{
+  font-size: 16px;
+
+  @include tablets{
+    font-size: 14px;
+  }
+
+  @include phones{
+    font-size: 12px;
+  }
+}
+
+html, body{
+  height: 100%;
+}
+
+body{
+  font-size: rem(16px);
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  @include ubuntu();
+  color: $black;
+}
+
+.container{
+  max-width: rem(940px);
+  width: 95%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper{
+  overflow: hidden;
+  // min-width: rem(1010px)+rem(20px);
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.main__content{
+  height: 100%;
+  min-height: rem(600px);
+  transition: 1s;
+  will-change: transform;
+}
+
+// tag styles reset
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}
+
+p {
+  padding: 0;
+  margin: 0;
+}
+
+footer {
+  position: relative;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  height:100%;
+  // min-height: rem(650px);
+  overflow: hidden;
+  display: flex;
+  position: relative;
+
+  &_centered {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.section-title {
+  font-size: rem(72px);
+  @include gagalin();
+  color: $yellow;
+  line-height: 1;
+
+  &_color {
+    &_black {
+      color: $black;
+    }
+    &_white{
+      color:#fff;
+      margin-bottom: rem(20px);
+    }
+
+  }
+
+  &_position {
+    &_center {
+      text-align: center;
+    }
+  }
+}

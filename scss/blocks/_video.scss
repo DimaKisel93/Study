@@ -1,0 +1,15 @@
+.video{
+    background: url('/img/how-work/bg.jpg') 0 0/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include tablets{
+        padding: 25% 0;
+    }
+
+    @include phones{
+        padding: 40% 40%;
+    }
+}

@@ -1,0 +1,120 @@
+.team {
+    background: url('/img/team/bg.jpg') center center no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+.team__container {
+position: absolute;
+top: 0;
+bottom: 0;
+right: 0;
+width: 50%;
+background: rgba(#2f3234, .93);
+padding-left: rem(70px);
+display: flex;
+flex-direction: column;
+padding-top: rem(50px);
+
+@include tablets{
+    width: 100%;
+    text-align: center;
+}
+
+@include phones{
+    padding-right: 10%;
+}
+}
+
+.team-acco__trigger {
+color: #fff;
+display: flex;
+align-items: center;
+text-decoration: none;
+@include gagalin();
+font-size: rem(14px);
+
+&:before {
+    content: "";
+    height: 0;
+    width: 0;
+    border: rem(9px) solid transparent;
+    border-top-color: $yellow;
+    border-bottom-width: rem(0px);
+
+}
+}
+
+.team-acco__content {
+display: flex;
+}
+
+.team-acco__text {
+color: #fff;
+}
+
+.team-acco__item_active {
+
+    .team-acco__content-wrap{
+        height: 100px;
+    }
+
+    .team-acco__trigger {
+        color: $yellow;
+
+    &:before {
+        transform: rotate(-180deg);
+    }
+}
+
+    .team-acco__content {
+        display: flex;
+        
+
+        @include tablets{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
+
+
+.team-acco__pic-img{
+    border-radius:50%;
+}
+
+.team-acco__text-content{
+    font-weight: 300;
+}
+
+.team-acco__text-title{
+    font-weight: bold;
+}
+
+.team-acco__item{
+    margin-bottom:rem(32px);
+    
+    @include tablets{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
+.team-acco{
+
+    @include tablets{
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.team-acco__content-wrap{
+    height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
